@@ -43,9 +43,12 @@ input {
 
 form {
     display: flex;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0 5rem;
 }
 
 .title {
@@ -133,4 +136,22 @@ form {
 .social-icon:hover {
     color: rgba(182, 217, 56);
     border-color: rgba(182, 217, 56);
+}
+
+.signin-signup {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form.sign-in-form {
+    z-index: 2;
+}
+
+form.sign-up-form {
+    z-index: 1;
+    opacity: 0;
 }
