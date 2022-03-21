@@ -85,7 +85,7 @@ form {
 
 .input-field input:placeholder-shown {
     color: white;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 .btn {
@@ -103,5 +103,34 @@ form {
 }
 
 .btn:hover {
-    background-color: rgba(182, 217, 56, 9);
+    background-color: rgba(182, 217, 56);
+}
+
+.social-text {
+    padding: 0.7rem 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-icon {
+    height: 46px;
+    width: 46px;
+    border: 1px solid #333;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.3rem;
+    transition: all .5s;
+}
+
+.social-icon:hover {
+    color: rgba(182, 217, 56);
+    border-color: rgba(182, 217, 56);
 }
