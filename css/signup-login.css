@@ -47,3 +47,16 @@ form {
     justify-content: center !important;
     align-items: center !important;
 }
+
+.title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(182, 217, 56, .9);
+}
