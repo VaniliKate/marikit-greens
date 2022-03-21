@@ -1,0 +1,14 @@
+body {
+    font-family: Poppins;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.navbar {
+    background-color: rgba(182, 217, 56, .9);
+
+}
