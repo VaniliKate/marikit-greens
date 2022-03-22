@@ -17,3 +17,13 @@ body {
     min-width: 110px;
     max-height: 36px;
 }
+/* breadcrumb section */
+.breadcrumb{
+    position: relative;
+    z-index: 1;
+    background: #383a3a;
+}
+.breadcrumb .crumb-inner{
+    font-size: 15px;
+    color: #fff;
+}
