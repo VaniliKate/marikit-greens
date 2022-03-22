@@ -7,8 +7,11 @@ body {
   font-family: Poppins;
   overflow-x: hidden;
 }
-.navbar-nav :visited a, .navbar-nav :hover, .navbar-nav :active, .navbar-nav:focus{
-    color: red !important;
+.navbar-nav :visited a,
+.navbar-nav :hover,
+.navbar-nav :active,
+.navbar-nav:focus {
+  color: red !important;
 }
 
 .nav-link {
@@ -20,6 +23,7 @@ body {
   line-height: 36px;
   letter-spacing: 0em;
   text-align: left;
+  scroll-behavior: smooth;
 }
 
 .navbar {
