@@ -22,6 +22,7 @@ body {
     position: relative;
     z-index: 1;
     background: #383a3a;
+    margin-bottom: 0px; 
 }
 .breadcrumb .crumb-inner{
     font-size: 15px;
