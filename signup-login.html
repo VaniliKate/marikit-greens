@@ -11,6 +11,9 @@
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link href="./css/signup-login.css" rel="stylesheet">
     <title>signup/login</title>
@@ -62,20 +65,17 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="forms-container">
-            <div class="signin-signup">
-                <form class="sign-in-form">
-                    <h2 class="title">Sign In</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <input type="submit" class="btn solid" value="LogIn">
+
+
+    <section id="log">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Sign up</h1>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button>Sign Up</button>
                     <p class="social-text">Or sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -93,67 +93,48 @@
                     </div>
                 </form>
             </div>
-            <div class="row pad">
-                <div class="col-8">
-                    <div class="signup-signin">
-                        <form class="sign-up-form">
-                            <h2 class="title">Sign Up</h2>
-                            <div class="input-field">
-                                <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Username">
-                            </div>
-                            <div class="input-field">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <div class="input-field">
-                                <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Password">
-                            </div>
-                            <input type="submit" class="btn solid" value="LogIn">
-                            <p class="social-text">Or sign in with social platforms</p>
-                            <div class="social-media">
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </form>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                    <p class="social-text">Or sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>One of us?</h1>
+                        <p>Your support is highly appreciated! Thank you for choosing us again!Happy Shopping!</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>New Here?</h1>
+                        <p>Welcome to Marikiti Greens! A one stop shop for all your grocery needs. We offer doorstep
+                            delivery to your preferred location as well! Happy shopping!</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
                     </div>
                 </div>
             </div>
-
         </div>
+    </section>
 
-        <div class="panels-container">
-            <div class="panel left-panel">
-                <div class="content">
-                    <h3>New Here?</h3>
-                    <p>Welcome to Marikiti Greens! A one stop shop for all your grocery needs. We offer doorstep
-                        delivery to your preferred location as well! Happy shopping!</p>
-                    <button class="btn transparent" id="sign-up-button">Sign Up</button>
-                </div>
-                <img src="./assets/tomato-2514018__340.webp" alt="" class="image" style="height:400px;width:400px">
-            </div>
-
-            <div class="panel right-panel">
-                <div class="content">
-                    <h3>One of us??</h3>
-                    <p>Your support is highly appreciated! Thank you for choosing us again!Happy Shopping!</p>
-                    <button class="btn transparent" id="sign-in-button">Sign In</button>
-                </div>
-                <img src="./assets/pimento-2031006__340.webp" alt="" class="image" style="height:400px;width:400px">
-            </div>
-        </div>
-    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
