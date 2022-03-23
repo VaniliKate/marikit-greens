@@ -78,6 +78,7 @@ function handleForm(event) {
     event.preventDefault();
 }
 form.addEventListener('submit', handleForm);
+form.target.reset();
 
 
 
@@ -86,4 +87,4 @@ var form2 = document.getElementById("form2");
 function handleForm(event) {
     event.preventDefault();
 }
-form.addEventListener('submit', handleForm);
+
