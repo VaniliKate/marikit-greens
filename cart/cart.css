@@ -391,3 +391,51 @@ body {
   font-size: 30px;
   margin-top: 60px;
 }
+/* boxeleven */
+.cboxeleven {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/apples.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccovereleven {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerthree h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxtwelve */
+.cboxtwelve {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/meat.jpeg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccovertwelve {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerthree h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
