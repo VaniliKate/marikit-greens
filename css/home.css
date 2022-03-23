@@ -52,18 +52,18 @@ border-bottom: 1px solid #eee;
     border-top: 0px solid transparent;
 }
 .product-side .list{
-    margin-top: 18px;
+    margin-bottom: 18px;
     transition: 0.5s;    
 }
 .product-side .list li a{
     font-size: 14px;
     font-weight: normal;
     color: #606060;
-    position: inherit;
+    position: relative;
     line-height: 5;
 }
 .side-shadow{
-    box-shadow: 0px 10px 10px 0px rgba(153, 153, 153, 0, 2);
+    box-shadow: 0px 10px 10px 0px rgba(153, 153, 153, 0.2);
 }
 @media (max-width: 991px){
     .side-title{
@@ -72,11 +72,11 @@ border-bottom: 1px solid #eee;
     }
 }
 .side-title h3{
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 20px;
     color: #fff;
     font-weight: 600;
-    /* line-height: 100px; */
+    line-height: 40px;
     position: relative;
     background: #444546;
     padding: 10px 15px 10px 30px;
