@@ -22,8 +22,10 @@
 
 .options {
   background-image: url("https://images.pexels.com/photos/3737696/pexels-photo-3737696.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  margin-top: 20%;
   background-size: cover;
-  padding: 50px;
+  width: 100vw;
+  height: 100vh;
 }
 .options {
   text-align: center;
