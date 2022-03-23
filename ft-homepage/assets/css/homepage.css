@@ -10,7 +10,8 @@ body {
 .navbar-nav :visited a,
 .navbar-nav :hover a,
 .navbar-nav :active a,
-.navbar-nav:focus a {
+.navbar-nav:focus a,
+.navbar-nav :link a{
   color: red !important;
 }
 
@@ -28,7 +29,7 @@ body {
 
 .navbar {
   background-color: #abeb45;
-  /* height: 8vh; */
+  border-bottom: 5px solid white;
 }
 
 .navbar .sign-up-btn {
@@ -38,7 +39,7 @@ body {
 /* Home Page */
 .home {
   height: 100vh;
-  background-color: #85ec7e;
+  background-color: #abeb45;
   /* margin-top: 10px; */
 }
 .home h2{
@@ -83,7 +84,7 @@ body {
 }
 .abtext {
   height: 100vh;
-  background-color: #85ec7e;
+  background-color: #abeb45;
   font-family: "Poppins" sans-serif;
   font-style: normal;
   font-weight: 800;
