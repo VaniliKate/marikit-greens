@@ -70,12 +70,12 @@
     <section id="log">
         <div class="container" id="container">
             <div class="form-container sign-up-container">
-                <form action="#">
+                <form name="myForm" action="/action_page.php" id="form2" onsubmit="validateForm()" method="post">
                     <h1>Sign up</h1>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <button>Sign Up</button>
+                    <input type="text" placeholder="Name" id="name2" name="name" />
+                    <input type="email" placeholder="Email" id="email2" name="email" required />
+                    <input type="password" placeholder="Password" id=password2 name="passwordd" required />
+                    <button id="btn" onsubmit="submit()">Sign Up</button>
                     <p class="social-text">Or sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -96,10 +96,10 @@
             <div class="form-container sign-in-container">
                 <form action="#">
                     <h1>Sign in</h1>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="email" class="name" placeholder="Email" required />
+                    <input type="password" class="pass" placeholder="Password" required />
                     <a href="#">Forgot your password?</a>
-                    <button>Sign In</button>
+                    <button id="btn-login" onclick="pageRedirect()">Sign In</button>
                     <p class="social-text">Or sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -135,14 +135,14 @@
         </div>
     </section>
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javasript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/signup-login.js"></script>
 </body>
 
