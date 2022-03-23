@@ -34,10 +34,10 @@ body {
   border-bottom: 5px solid white;
 }
 
-.navbar .sign-up-btn {
+/* .navbar .sign-up-btn {
   min-width: 110px;
   max-height: 36px;
-}
+} */
 /* Home Page */
 .home {
   height: 100vh;
@@ -48,7 +48,7 @@ body {
   padding-top: 80px;
 }
 .carousel-item img {
-  height: 80vh;
+  height: 70vh;
   width: 1310px;
   border-radius: 50px;
   justify-content: center;
@@ -90,7 +90,7 @@ body {
   font-family: "Poppins" sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   justify-content: center;
   align-self: center;
