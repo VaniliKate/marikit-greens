@@ -1,3 +1,25 @@
+.nav-link {
+  color: white !important;
+  font-family: "Poppins" sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: #abeb45;
+}
+.navbar-nav :visited a,
+.navbar-nav :hover a,
+.navbar-nav :active a,
+.navbar-nav:focus a,
+.navbar-nav :link a{
+  color: red !important;
+}
+
 .options {
   background-image: url("https://images.pexels.com/photos/3737696/pexels-photo-3737696.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-size: cover;
