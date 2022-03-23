@@ -127,7 +127,7 @@ $(document).ready(function () {
       $(".product-list").append(
         `<tr>
         <th scope="row">${element.id}</th>
-        <td><img src='./images/'${element.id} width='50px' /></td>
+        <td><img src='./images/${element.image}' width='50px' style="border-radius:10px;" /></td>
         <td>${element.name}</td>
         <td>Ksh. ${element.price}</td>
     </tr>`
@@ -163,6 +163,8 @@ $(document).ready(function () {
     }
     let category = addProduct(productCategory,productName,slicedUrl,productPrice);
     $("#no-prod").remove();
-    $(".product-list").append(`<tr><th scope='row'>${category.id}</th><td><img src='./images/'${slicedUrl} width='50px' /></td><td>${category.name}</td><td>Ksh. ${category.price}</td></tr>`);
+    $(".product-list").append(
+      `<tr><th scope='row'>${category.id}</th><td><img src='./images/${slicedUrl}' width='50px' style="border-radius:10px;"/></td><td>${category.name}</td><td>Ksh. ${category.price}</td></tr>`
+    );
   });
 });
