@@ -161,3 +161,27 @@ body {
   font-size: 30px;
   margin-top: 60px;
 }
+/* box three */
+.cboxthree {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./image/pork.jpg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverthree {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainer h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
