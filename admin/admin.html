@@ -111,7 +111,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Categories</a
                 >
@@ -121,7 +121,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Orders</a>
-              </li>
+              </li> -->
             </ul>
             <span class="navbar-text"> Log Out </span>
           </div>
@@ -129,19 +129,19 @@
       </nav>
       <div class="admin-content">
         <div class="admin-categories d-flex">
-          <div class="category-form m-3 p-2">
+          <div class="category-form m-3 p-2 w-25">
             <h3>Create Category</h3>
             <form action="">
               <div class="mb-3">
                 <label for="">Category Name</label>
-                <input type="text" class="form-control" />
+                <input type="text" id="category-name" class="form-control" />
               </div>
-              <button type="submit" class="btn btn-success">
+              <button type="button" class="btn btn-success add-category">
                 ADD CATEGORY
               </button>
             </form>
           </div>
-          <div class="category-table m-3 p-2">
+          <div class="category-table m-3 p-2 w-50">
             <caption>
               Categories
             </caption>
@@ -152,11 +152,51 @@
                   <th scope="col">Category name</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="category-list">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="admin-content">
+        <div class="admin-products d-flex">
+          <div class="product-form m-3 p-2 w-25">
+            <h3>Create Product</h3>
+            <form action="">
+              <div class="mb-3">
+                <label for="">Product Name</label>
+                <input type="text" id="product-name" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="">Product Image</label>
+                <input type="text" id="product-image" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="">Product Price</label>
+                <input type="text" id="product-price" class="form-control" />
+              </div>
+              <button type="button" class="btn btn-success add-product">
+                ADD PRODUCT
+              </button>
+            </form>
+          </div>
+          <div class="product-table m-3 p-2 w-50">
+            <caption>
+              Products
+            </caption>
+            <table class="table">
+              <thead>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
+                  <th scope="col">Id</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Like</th>
                 </tr>
+              </thead>
+              <tbody class="product-list">
+
               </tbody>
             </table>
           </div>
