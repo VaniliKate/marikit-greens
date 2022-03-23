@@ -439,3 +439,193 @@ body {
   font-size: 30px;
   margin-top: 60px;
 }
+
+/* sectioncfour */
+
+.cfour {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+.cfour h2 {
+  font-weight: bolder;
+  text-align: left;
+  text-decoration: underline 3px rgb(26, 228, 26);
+  margin-left: 140px;
+}
+.cbagone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* containnerfour */
+
+.ccontainerfour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+/* box13 */
+.cbox13 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/fresh\ tomatoes.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccover13 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerfour h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* box14 */
+.cbox14 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshcarrots.webp);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover14 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerfour h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+/* box15 */
+.cbox15 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshonions.jpg);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover15 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerfour h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+/* ccontainersix */
+.ccontainersix {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+/* box16 */
+.cbox16 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshcucumber.jpg);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover16 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainersix h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* box17 */
+.cbox17 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshcabbage.webp);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover17 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainersix h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* box18 */
+.cbox18 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./image/manyother.webp);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover18 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainersix h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+.ccontainerfive p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
