@@ -28,3 +28,57 @@ body {
     font-size: 15px;
     color: #fff;
 }
+/* side bar */
+.side-area{
+    margin-bottom: 30px;
+}
+.side-area:last-child{
+    margin-bottom: 0px;
+}
+.product-side .side-content{
+border-bottom: 1px solid #eee;
+}
+.product-side .side-content:last-child{
+    border-bottom: 0px;
+}
+.product-side .list{
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+.product-side .list:first-child{
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 0px solid transparent;
+}
+.product-side .list{
+    margin-top: 18px;
+    transition: 0.5s;    
+}
+.product-side .list li a{
+    font-size: 14px;
+    font-weight: normal;
+    color: #606060;
+    position: inherit;
+    line-height: 5;
+}
+.side-shadow{
+    box-shadow: 0px 10px 10px 0px rgba(153, 153, 153, 0, 2);
+}
+@media (max-width: 991px){
+    .side-title{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.side-title h3{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    /* line-height: 100px; */
+    position: relative;
+    background: #444546;
+    padding: 10px 15px 10px 30px;
+    text-transform: uppercase;
+}
