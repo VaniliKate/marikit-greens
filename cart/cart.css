@@ -282,3 +282,34 @@ body {
   font-weight: bolder;
   color: white;
 }
+/* containertwo */
+.ccontainertwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* boxseven */
+.cboxseven {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./image/berrys.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverseven {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainertwo h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
