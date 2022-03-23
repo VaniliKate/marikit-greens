@@ -63,3 +63,33 @@ body {
   font-weight: bolder !important;
   font-size: 20px;
 }
+.cone {
+    background-image: url(./cimage/vegi.jpeg);
+    height: 95vh;
+    width: 100vw;
+    background-size: cover;
+    position: relative;
+  }
+  .coverlay {
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.3);
+  }
+  .cart {
+    border: solid white 1px;
+    height: 70vh;
+    width: 70vw;
+    margin-left: 250px;
+    margin-top: 100px;
+    background: white;
+    text-align: center;
+  }
+  .cart h3 {
+    font-size: 50px !important;
+    font-weight: bolder;
+  }
+  .cimage {
+    height: 100vh;
+    width: 100vw;
+  }
