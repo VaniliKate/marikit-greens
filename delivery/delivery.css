@@ -1,6 +1,7 @@
-.container {
+.options {
   background-image: url("https://images.pexels.com/photos/3737696/pexels-photo-3737696.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-size: cover;
+  padding: 50px;
 }
 .options {
   text-align: center;
