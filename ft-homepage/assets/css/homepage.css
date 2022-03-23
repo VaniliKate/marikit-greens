@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Poppins;
+  font-family: "Poppins" sans-serif;
   overflow-x: hidden;
 }
 .navbar-nav :visited a,
-.navbar-nav :hover,
-.navbar-nav :active,
-.navbar-nav:focus {
+.navbar-nav :hover a,
+.navbar-nav :active a,
+.navbar-nav:focus a {
   color: red !important;
 }
 
@@ -35,18 +35,51 @@ body {
   min-width: 110px;
   max-height: 36px;
 }
+/* Home Page */
+.home {
+  height: 100vh;
+  background-color: #85ec7e;
+  /* margin-top: 10px; */
+}
+.home h2{
+  padding-top: 80px;
+}
+.carousel-item img {
+  height: 700px;
+  width: 1310px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.carousel-item h1 {
+   top: 469px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 108px;
+  align-items: center;
+  text-align: center;
+}
+.values{
+  height: 30vh;
+}
 /* About Us */
 .about-us {
   height: 100vh;
   /* border: 2px solid palevioletred; */
+  /* padding-top: 80px; */
 }
-.img-fluid {
+.abt-img {
   position: absolute;
   width: 50%;
   height: 100vh;
   left: 0px;
   /* top: 70px; */
   background: url(../img/abt.jpeg);
+  /* background-repeat: no-repeat; */
+  padding-top: 80px;
 }
 .abtext {
   height: 100vh;
@@ -60,7 +93,7 @@ body {
   align-self: center;
   text-align: center;
   color: #000000;
-  padding-top: 1%;
+  padding-top: 80px;
 }
 .homeicons {
   padding-top: 5%;
@@ -72,7 +105,7 @@ body {
   font-size: 18px;
 }
 .homeicons i {
-  color: white;
+  color: black;
   height: 0px;
   font-size: 64px;
   height: 16px;
@@ -83,5 +116,9 @@ footer {
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
-  color: black;
+  color: white;
+}
+.connect{
+  color: black !important;
+  background-color: white !important;
 }
