@@ -286,9 +286,7 @@ input {
     width: 40px;
 }
 
-label.error{
-    font-weight: 700;
-    display: block;
-    color: red;
-    font-size: 14px;
+#p1, #p2, #p3
+{
+  color: #FF0000;
 }

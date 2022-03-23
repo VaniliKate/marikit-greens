@@ -10,32 +10,41 @@ signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
 
-/*Sign up form validation
-$("#form2").validate({
-    rules:{
-        name:{
-            minlength: 2
+//Sign up form validation
+$(document).ready(function () {
+    $("#btn").click(function () {
+        var name = $("#name2").val();
+        var email = $("#email2").val();
+        var pass = $("#password2").val();
+
+        if (name.length == "") {
+            $("#p1").text("Please enter your name");
+            $("#name").focus();
+            return false;
+        } else if (email.length == "") {
+            $("#p2").text("Please enter your email address");
+            $("#email").focus();
+            return false;
+        } else if (pass.length == "") {
+            $("#p3").text("Please enter your password");
+            $("#Password").focus();
+            return false;
+        } else {
+            var con = confirm("Proceed to the home page?");
+            if (con == true) {
+                alert("Welcome to our Marirkiti Greens website");
+                window.location("../test-login.html");
+                return true;
+            } else {
+                return false;
+            }
         }
-    },
+    });
 
-    email:{
-        email: true
-    },
-    messages: {
-        name:{
-            required: "Please enter your name",
-            minlength: "Name should be atleast two characters"
-        },
-        email: "Please enter your email",
-        password: "Please enter your password"
-      },
+});
 
-    submitHandler: function(form) {
-      form.submit();
-    }
-   });
-  
-*/
+
+
 //Local storage
 $(document).ready(function () {
     function createUser() {
@@ -58,19 +67,19 @@ $(document).ready(function () {
 
             if (name == user.name & password == user.password) {
                 alert("Logged In")
-                window.location("../test-login.html")
+                // window.location("../test-login.html")
             } else {
-                console.log(name,password)
+                console.log(name, password)
                 console.log(user)
                 alert("Inavalid Email/Password")
                 return
             }
-            
+
 
         }
         alert("Create account first!")
     }
-      $("#btn-login").click(function () {
+    $("#btn-login").click(function () {
         getUser()
     })
     $("#btn").click(function () {
@@ -83,6 +92,4 @@ $(document).ready(function () {
 //On log in
 function pageRedirect() {
     window.location.href = "https://www.tutorialrepublic.com/";
-  }  
-
-
+}
