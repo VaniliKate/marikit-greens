@@ -9,7 +9,7 @@ $(document).ready(function () {
     let categories = JSON.parse(localStorage.getItem("categories"));
     return categories;
   }
-//Add category
+  //Add category
   function addCategory(gategoryName) {
     if (localStorage.getItem("categories")) {
       console.log("in run");
@@ -29,8 +29,8 @@ $(document).ready(function () {
   }
 
   let categories = getCategories();
-    console.log(categories);
-    //Append categories to table
+  console.log(categories);
+  //Append categories to table
   if (categories === null) {
     $(".category-list").append(
       `<tr id="no-cat">
@@ -50,9 +50,13 @@ $(document).ready(function () {
   }
   //Append one category to table on add
   $(".add-category").click(function () {
-    let categoryName = $("#category-name").val();
-      let category = addCategory(categoryName);
-      $("#no-cat").remove()
+      let categoryName = $("#category-name").val();
+      if (!categoryName) {
+          alert("Category name cannot be empty")
+          return
+      }
+    let category = addCategory(categoryName);
+    $("#no-cat").remove();
     $(".category-list").append(`<tr>
                 <th scope="row">${category.id}</th>
                 <td>${category.name}</td>
