@@ -19,6 +19,7 @@ function getItDelivered() {
     $("#pickup").hide();
     $("#deliver").hide();
     $("#deliveryoptions").hide();
+    $(".options").hide();
 
   }
 
@@ -42,6 +43,7 @@ function deliveryConfirmation() {
 }
 
 function pickUp() {
+  $(".options").hide();
   $("#pickup").hide();
   $("#deliver").hide();
   $("#deliveryoptions").hide();
