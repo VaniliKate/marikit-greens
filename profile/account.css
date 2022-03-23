@@ -1,0 +1,123 @@
+ body{
+     margin: 0;
+     padding: 0;
+ }
+ body {
+    font-family: Poppins;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.navbar {
+    background-color: rgba(182, 217, 56, .9);
+
+}
+
+.navbar .sign-up-btn {
+    min-width: 110px;
+    max-height: 36px;
+}
+#logo{
+    border-radius: 15px 50px 30px
+}
+h1{
+    text-align: center;
+    color:teal;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* backface-visibility: visible; */
+}
+.part-1{
+    background-color:whitesmoke;
+    width:30%;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    font-weight: bold;
+}
+
+h3{
+    font-weight:bolder;
+    font-size: large;
+    color:blanchedalmond; 
+}
+.container-fluid , p{
+    font-weight: bold;
+    font-size: large;
+    color:blanchedalmond;
+}
+.container-fluid{
+    display: flex;
+    justify-content:right;
+}
+
+
+#show-acc{
+    display: block;
+}
+.container{
+    border: 2px solid greenyellow;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.icon img{
+    color: black;
+    border:1px solid teal;
+    margin-left: 6px;
+
+}
+.details{
+    height: 350px;
+    width: 600px;
+    border: 8px  solid seashell;
+    background-color: rgb(175, 255, 47);
+    border-radius:2px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.Details2{
+    height: 400px;
+    border: 8px  solid rgb(56, 50, 50);
+    background-color: rgb(113, 255, 106);
+    border-radius:2px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-top: 100px;
+    margin-left: 100px;
+}
+h2{
+    text-align: center;
+}
+h6{
+    border-left: 6px solid gold ;
+     font-weight: bolder;
+     font-size: large;
+     color:black;
+     padding-left:6px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color:black;
+  }
+ #next-pic{
+     padding-top: 300px;
+     padding-left: 200px;
+     text-align: right;
+     width: 600px;
+ }
+ #img-ttle{
+     width:450px;
+ } 
+
+
+
