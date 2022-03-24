@@ -49,7 +49,9 @@ function store() {
         localStorage.setItem('pw', pw.value);
         localStorage.setItem('email', email.value);
         alert('Your account has been created');
-        location.replace("https://www.w3schools.com");
+        window.location.replace(
+          (window.location.pathname = "/ft-homepage/homepage.html")
+        );
     }
 }
 

@@ -9,4 +9,13 @@ $(document).ready(function () {
         $(".admin-auth").hide();
         $(".hide-logged").hide();
     }
+    $(".log-out").click(function () {
+        localStorage.removeItem("pw");
+        localStorage.removeItem("email");
+        localStorage.removeItem("name");
+        
+        window.location.replace(
+          (window.location.pathname = "/ft-homepage/homepage.html")
+        ); 
+    })
 })
