@@ -12,14 +12,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link href="./css/home.css" rel="stylesheet">
-    <link href="./css/account.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
+    <link href="./profile.css" rel="stylesheet">
     <title>Profile</title>
 </head>
 
 
 
 <body>
+<<<<<<< Updated upstream
     <nav class="navbar navbar-expand-lg navbar-light one">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">MARIKITI GREEN</a>
@@ -66,6 +67,57 @@
             </div>
         </div>
     </nav>
+=======
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light one">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MARIKITI GREENS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                                <li><a class="dropdown-item" href="#">Crereals</a></li>
+                                <li><a class="dropdown-item" href="#">Meat</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/log/log.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/log/log.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/admin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/profile/account2.html">Account</a>
+                        </li>
+                    </ul>
+                    <div style="margin-right: 30px">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+>>>>>>> Stashed changes
     <main id="main-account">
       <div class="container">
             <h1><u>Profile</u></h1>
@@ -75,20 +127,23 @@
                 <img src="./ac-images/CDC_produce.png" id="img-ttle" alt="veggies">
                <div class="details">
                 <h2><u>Details</u></h2>
-                <br><br>
-                    <h6>Name</h6>
-                  <p><span class="fnametext"></span> <span class="lnametext"></span></p>
-                    <br><br>
-                  <h6>Age</h6>
-                       <p><span class="agetext"></span></p>
-                  <br><br>
+                          <br><br>
+                <div class="img">
+                    <img src="https://img.icons8.com/emoji/96/000000/waving-hand-emoji.png" onmouseenter="bigImg(this)" onmouseleave="smallImg(this)"/>
+                </div> 
+                         <br><br>
+                         </div>
+                <h6>Hello there,</h6>
+                  <p> Am<span class="nametext"></span></p>
+                       <br><br>
                      </div>
                   </div>
-            <div class="col-md-6">
+             <div class="col-md-6">
                   <img src="./ac-images/fruit.jpg" alt="pic" id="next-pic" class="rounded">
                 <br><br>
               </div>
               </div>
+<<<<<<< Updated upstream
             </div>
               <br><br>
          </div>
@@ -112,8 +167,39 @@
             </div>
             <div class="copyright">
             <p><span>&#169;</span>Copyright 2022</p>
+=======
+              <div class="footer">
+                  <div class="row">
+                      <div class="col-md-4">
+                        <div class="title-foot">
+                            <h6>Marikit-Greens</h6>
+                        </div>
+                          </div>
+                       <br><br>
+                <div id="copyright">
+                     <p><span>&#169;</span>Copyright 2022</p>
+                </div>
+                <div id="icon">
+                    <img src="./ac-images/i1.png"  width="20" height="20">
+                    <img src="./ac-images/i2.jpeg" width="20" height="20">
+                    <img src="./ac-images/i3.jpeg"width="20" height="20">
+                       </div>
+                </div>
+>>>>>>> Stashed changes
             </div>
-        </footer>
+              <br><br>
+         </div>
+         <script>
+              function bigImg(x) {
+        x.style.height = "74px";
+        x.style.width = "74px";
+      }
+      
+      function smallImg(x) {
+        x.style.height = "32px";
+        x.style.width = "32px";
+      }
+         </script>
       </main>
       <script src="https://code.jquery.com/jquery-3.6.0.js" 
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -127,11 +213,13 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
         crossorigin="anonymous">
     </script>
+<<<<<<< Updated upstream
     <script src="./js/account.js"></script>
 
 </body>
+=======
+    <script src="./profile.js"></script>
+
+>>>>>>> Stashed changes
 </body>
-
-
-</html>
 </html>
