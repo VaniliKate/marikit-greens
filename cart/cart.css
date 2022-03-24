@@ -104,6 +104,17 @@ body {
   font-size: 50px !important;
   font-weight: bolder;
 }
+#cart{
+  padding: 20px;
+  border-radius: 10px;
+  background: transparent;
+  color: azure;
+  font-size: 20px;
+
+}
+#cart:hover{
+   background-color: chartreuse;
+}
 .cimage {
   height: 100vh;
   width: 100vw;
