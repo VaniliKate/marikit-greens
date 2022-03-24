@@ -16,10 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="./assets/css/homepage.css" rel="stylesheet" type="text/css" />
     <link href="./css/delivery.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="./js/delivery.js"></script>
+    
+
     <title>Marikiti Greens</title>
 </head>
 
@@ -36,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -44,20 +43,20 @@
                                 Categories
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Vegetables</a></li>
-                                <li><a class="dropdown-item" href="#">Fruits</a></li>
-                                <li><a class="dropdown-item" href="#">Crereals</a></li>
-                                <li><a class="dropdown-item" href="#">Meat</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Vegetables">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Fruits">Fruits</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Cereals">Cereals</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Meat">Meat</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Log in</a>
+                        <li class="nav-item hide-auth">
+                            <a class="nav-link" href="../log/log.html">Log in</a>
+                        </li>
+                        <li class="nav-item hide-auth">
+                            <a class="nav-link" href="../log/log.html">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-us">About us</a>
+                            <a class="nav-link" href="../index.html#about-us">About us</a>
                         </li>
                         <li class="nav-item admin-auth">
                             <a class="nav-link" href="../admin/admin.html">Admin</a>
@@ -70,8 +69,8 @@
                         </li>
                     </ul>
                     <div style="margin-right: 30px">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
+              <a href="../cart2/cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
                 </div>
             </div>
         </nav>
@@ -171,7 +170,7 @@
 <div class="card-delivery">
     <p class="delivery-feedback" style="margin-top: 20%; margin-left: 35%; margin-right: 30%;"></p>
   <div id="pickup-button">
-    <button type="submit" class="btn" id="pickup-button" style="color: white; background-color: #ABEB45; margin-top: 40%; margin-left: 49%;">home</button>
+    <button type="submit" class="btn go-home" id="pickup-button" style="color: white; background-color: #ABEB45; margin-top: 40%; margin-left: 49%;">home</button>
   </div>
 </div>
 
@@ -185,7 +184,7 @@
      <p class="p1">Thank you for shopping with us.</br>
         Please pick up your greens from</br>
        our store in the next 30 minutes.</p>
-      <button type="submit" class="btn" id="pickup-button" style="color: white; background-color: #ABEB45;">home</button>
+      <button type="button" class="btn go-home" id="pickup-btn" style="color: white; background-color: #ABEB45;">home</button>
    </div>
    </card>
    </div>
@@ -204,7 +203,8 @@ integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="./assets/scripts/homepage.js"></script>
+    
+    <script src="./js/delivery.js"></script>
 <script src="../auth.js"></script>
 </body>
 

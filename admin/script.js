@@ -168,7 +168,7 @@ $(document).ready(function () {
     let category = addProduct(productCategory,productName,slicedUrl,productPrice);
     $("#no-prod").remove();
     $(".product-list").append(
-      `<tr><th scope='row'>${category.id}</th><td><img src='./images/${slicedUrl}' width='50px' style="border-radius:10px;"/></td><td>${category.name}</td><td>Ksh. ${category.price}</td></tr>`
+      `<tr><th scope='row'>${category.id}</th><td><img src='./images/${slicedUrl}' width='50px' style="border-radius:10px;"/></td><td>${category.name}</td><td>${category.category}</td><td>Ksh. ${category.price}</td></tr>`
     );
   });
 });

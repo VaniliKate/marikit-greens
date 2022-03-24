@@ -103,7 +103,7 @@
   text-align: center;
   font-size: x-large;
   }
-#pickup-button {
+#pickup-button, #pickup-btn {
   justify-content: center;
   margin-top: 35%;
   margin-left: 2%;

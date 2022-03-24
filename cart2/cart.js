@@ -1,3 +1,8 @@
+$(".check-out").click(function () {
+  window.location.replace(
+    (window.location.pathname = "/delivery/delivery.html")
+  );
+})
 $(".cboxone").hover(
   function () {
     $(".ccoverone").show(function () {
