@@ -286,13 +286,261 @@ $(".cbox18").hover(
   }
 );
 
-$("#product").click(function () {
+$(".ccoverone").click(function () {
   let name = $(this).find("h6").text();
   let price = $(this).find("p").text();
   let per = $(this).find("#cmin").text();
   let newItem = `
   <tr>
   <th scope="row">1</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccovertwo").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">2</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccoverthree").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">3</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccoverfour").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">4</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccoverfive").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">5</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccoverseven").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">6</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccovereight").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">7</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+$(".ccovernine").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">8</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+$(".ccoverten").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">9</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+$(".ccovereleven").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">10</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccover13").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">11</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+$(".ccover14").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">12</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccover15").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">13</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccover16").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">14</th>
+  <td id="size">${name}</td>
+  <td id="total">${per}</td>
+  <td id="crust">${price}</td>
+  <td id="total"></td>
+  </tr>
+
+      `;
+
+  $("#pizza").append(newItem);
+});
+
+$(".ccover17").click(function () {
+  let name = $(this).find("h6").text();
+  let price = $(this).find("p").text();
+  let per = $(this).find("#cmin").text();
+  let newItem = `
+  <tr>
+  <th scope="row">15</th>
   <td id="size">${name}</td>
   <td id="total">${per}</td>
   <td id="crust">${price}</td>
