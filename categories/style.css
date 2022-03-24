@@ -1,5 +1,6 @@
 body{
-   font-family: "Poppins"
+   font-family: "Poppins";
+   background-color: #198754;
 }
 .navbar {
   background-color: #abeb45;
@@ -22,3 +23,24 @@ body{
   text-align: left;
   scroll-behavior: smooth;
 }
+
+.product-items{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category-item{
+  align-items: center;
+  margin:0px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border:2px solid white;
+  width:50%;
+  padding:10px;
+  margin:10px;
+  border-radius:15px;
+}
+/* .apply-cat-prod{
+  background: url("./vegetables.png");
+} */

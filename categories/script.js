@@ -28,16 +28,15 @@ $(document).ready(function () {
   let products = getProducts();
   categories.forEach((category) => {
     $(".product-items").append(
-      `<h2 style="color:green;" id='${category.name}'>${category.name}</h2>`
+      `<h1 style="color:black;" id='${category.name}'>${category.name}</h1>`
     );
     products.forEach((product) => {
       if (product.category == category.name) {
         $(".product-items").append(`
-                <div style="align-items-center;margin:0px;display:flex;flex-direction:column;align-items:center;border:1px solid green; width:300px;padding:10px;margin:10px;border-radius:15px;">
+                <div class="category-item">
                 <img src='../admin/images/${product.image}' width="70%" style="border-radius:10px;margin-bottom:10px;" />
                 <h5>${product.name}<h5>
                 <h5>Ksh. ${product.price}<h5>
-                <button type="button" class="btn" style="background-color:#abeb45;">Add To Cart</button>
                 </div>`);
       }
     });
