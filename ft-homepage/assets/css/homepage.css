@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Poppins" sans-serif;
-  overflow-x: hidden;
+ 
   height: 100%;
   width: 100%;
 }
@@ -34,21 +34,18 @@ body {
   border-bottom: 5px solid white;
 }
 
-.navbar .sign-up-btn {
-  min-width: 110px;
-  max-height: 36px;
-}
-/* Home Page */
+
+
 .home {
   height: 100vh;
   background-color: #abeb45;
-  /* margin-top: 10px; */
+  margin-top: 10px;
 }
 .home h2{
   padding-top: 80px;
 }
 .carousel-item img {
-  height: 80vh;
+  height: 70vh;
   width: 1310px;
   border-radius: 50px;
   justify-content: center;
@@ -68,10 +65,10 @@ body {
 .values{
   height: 30vh;
 }
-/* About Us */
+
 .about-us {
   height: 80vh;
-  /* border: 2px solid palevioletred; */
+ 
   
 }
 .abt-img {
@@ -90,12 +87,15 @@ body {
   font-family: "Poppins" sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   justify-content: center;
   align-self: center;
   text-align: center;
   color: #000000;
+ 
+}
+.desc{
   padding-top: 80px;
 }
 .homeicons {
@@ -113,7 +113,7 @@ body {
   font-size: 64px;
   height: 16px;
 }
-/* Foter */
+
 footer {
   font-family: "Poppins" sans-serif;
   font-style: normal;
