@@ -105,7 +105,8 @@ body {
   font-weight: bolder;
 }
 #cart{
-  padding: 20px;
+  height: 40px;
+  width: 50px;
   border-radius: 10px;
   background: transparent;
   color: azure;
