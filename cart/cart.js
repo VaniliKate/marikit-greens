@@ -289,13 +289,32 @@ $(".cbox18").hover(
 $("#product").click(function () {
   let name = $(this).find("h6").text();
   let price = $(this).find("p").text();
+  let total = $(this).find("#total").text()
   let newItem = `
       <div id="newItem">
-        <h4>${name}</h4>
-        <p>${price}</p>
-        <button id="remove">Remove</button>
-      </div>
+         <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Order No.</th>
+          <th scope="col">type</th>
+          <th scope="col">per kg</th>
+          <th scope="col">Crust</th>
+          <th scope="col">Total (ksh)</th>
+        </tr>
+      </thead>
+      <tbody id="pizza_">
+        <tr>
+          <th scope="row">1</th>
+          <td id="size">${name}</td>
+          <td id="toppings">${price}</td>
+          <td id="crust"></td>
+          <td id="total">${total}</td>
+        </tr>
+      </tbody>
+    </table>
       `;
 
   $("#cart-items").append(newItem);
 });
+
+
