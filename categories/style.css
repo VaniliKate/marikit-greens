@@ -1,0 +1,13 @@
+body{
+   font-family: "Poppins"
+}
+.navbar {
+  background-color: #abeb45;
+}
+.navbar-nav :visited a,
+.navbar-nav :hover a,
+.navbar-nav :active a,
+.navbar-nav:focus a,
+.navbar-nav :link a{
+  color: red !important;
+}
