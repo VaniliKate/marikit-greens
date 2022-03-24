@@ -59,7 +59,6 @@ function check(){
 
     var userName = document.getElementById('email2');
     var userPw = document.getElementById('password2');
-    var userRemember = document.getElementById("rememberMe");
 
     if(userName.value == storedName && userPw.value == storedPw){
         alert('You are logged in.');
