@@ -20,6 +20,7 @@ function getItDelivered() {
   $("#deliver").hide();
   $("#deliveryoptions").hide();
   $(".options").hide();
+  $(".pickup-feedback").hide();
   
 }
 
@@ -46,17 +47,14 @@ let location = $("#location").val();
   $("#deliveryoptions").hide();
   $(".deliversection").hide();
 
-  $(".delivery-feedback-image").show();
-  $(".delivery-feedback").text("Thank you " + firstName + " " + lastName + " for shopping with Marikiti Greens. Your greens will be delivered to " + location + ". For any further communication, we shall reach you through this number " + "+254787878787");
-  $(".delivery-feedback").show();
+
+  $(".card-delivery").show();
+  $(".delivery-feedback").text("Thank you " + firstName + " " + lastName + " for shopping with Us. Your greens will be delivered to " + location + ". For any further communication, we shall reach you through this number " + "+254787878787");
+  
 
   }
 
 }
-
-
-
-
 function pickUp() {
   $(".options").hide();
   $("#pickup").hide();
@@ -65,5 +63,6 @@ function pickUp() {
   $(".deliversection").hide();
 
   $(".pickup-feedback").show();
-}
+  $(".card-pickup").show();
+};
 

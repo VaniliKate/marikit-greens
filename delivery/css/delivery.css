@@ -74,42 +74,64 @@
   font-size: xx-large;
   color: white;
   background-color: black;
-  }
-  .title-quote{
+}
+.title-quote{
   font-family: 'Poppins';
   font-weight: bolder;
   color: white;
   font-size: large;
+}
+.delivery-details {
+  color: black;
+  font-weight: bolder;
+ }
+#deliverysubmitbutton {
+  background-color: #ABEB45;
+  font-weight: bolder;
+}
+.card-delivery{
+  position: relative;
+  background-image: url("https://static01.nyt.com/images/2018/03/07/dining/00IMPORTS/00IMPORTS-articleLarge.gif?quality=75&auto=webp&disable=upscale");
+  height: 100vh;
+  display: none;
+}
+.delivery-feedback {
+  background-color: rgba(171, 235, 69, 0.7);
+  position: absolute;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  font-size: x-large;
   }
-  .delivery-details {
-    color: black;
-    font-weight: bolder;
-  }
-  #deliverysubmitbutton {
-    background-color: #ABEB45;
-    font-weight: bolder;
-  }
-  .delivery-feedback {
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    font-size: x-large;
-    position: absolute;
-    background-size: contain;
-    width: 100vw;
-    height: 100vh;
-    
-  }
-  .delivery-feedback{
-    position: relative;
-    background-image: url("https://static01.nyt.com/images/2018/03/07/dining/00IMPORTS/00IMPORTS-articleLarge.gif?quality=75&auto=webp&disable=upscale");
-    display: none;
-  }
-  .pickup-feedback {
-    display: none;
-    text-align: center;
-    color: black;
-    font-weight: bolder;
-    background-color: #ABEB45;
-
-  }
+#pickup-button {
+  justify-content: center;
+  margin-top: 35%;
+  margin-left: 2%;
+  
+}
+.pickup-feedback {
+  position: relative;
+  text-align: center;
+  display: none;
+  background-image: url("https://static01.nyt.com/images/2018/03/07/dining/00IMPORTS/00IMPORTS-articleLarge.gif?quality=75&auto=webp&disable=upscale");
+  height: 100vh;
+  justify-content: center;
+}
+.card-pickup {
+  display: none;
+  overflow: hidden;
+ 
+}
+.p1{
+  position: absolute;
+  background-color: rgba(171, 235, 69, 0.7);
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20%;
+  margin-left: 35%;
+  margin-right: 30%;
+  
+}
