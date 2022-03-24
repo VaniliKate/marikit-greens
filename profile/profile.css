@@ -121,6 +121,13 @@ h6{
  #img-ttle{
      width:450px;
  } 
+#edit{
+    background-color:darkcyan;
+    color: black;
+    width: 20%;
+    border-radius: 3px;
+    border:2px solid darkorange;
 
+}
 
 

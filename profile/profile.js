@@ -1,13 +1,17 @@
 function myProfile(){
-    var name = localStorage.getItem('name');
-    name= JSON.parse(name);
-    var email = localStorage.getItem('email');
-    email= JSON.parse(email);
-}
- 
-$(document).ready(function(){
+    var profileName = localStorage.getItem('name'); 
+    var profileEmail= localStorage.getItem('email');
 
-});
+    event.preventDefault();
+    document.getElementsByClassName("nametext").innerHTML = 'name';
+    document.getElementsByClassName("emailtext").innerHTML = 'email';
+    
+}
+
+
+
+
+
 
 
 
