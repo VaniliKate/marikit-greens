@@ -3,15 +3,15 @@ const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
 signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
+    container.classList.add("right-panel-active");
 });
 
 signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
+    container.classList.remove("right-panel-active");
 });
 
 //Sign up validation and storing items with local storage
-function store(){
+function store() {
 
     var name = document.getElementById('name');
     var pw = document.getElementById('password');
@@ -20,31 +20,31 @@ function store(){
     var upperCaseLetters = /[A-Z]/g;
     var numbers = /[0-9]/g;
 
-    if(name.value.length == 0){
+    if (name.value.length == 0) {
         alert('Please fill in name');
 
-    }else if(pw.value.length == 0){
+    } else if (pw.value.length == 0) {
         alert('Please fill in password');
 
-    }else if(email.value.length == 0){
+    } else if (email.value.length == 0) {
         alert('Please fill in email');
 
-    }else if(email.value.length == 0 && pw.value.length == 0){
+    } else if (email.value.length == 0 && pw.value.length == 0) {
         alert('Please fill in email and password');
 
-    }else if(pw.value.length > 24){
+    } else if (pw.value.length > 24) {
         alert('Max of 24');
 
-    }else if(!pw.value.match(numbers)){
+    } else if (!pw.value.match(numbers)) {
         alert('please add 1 number');
 
-    }else if(!pw.value.match(upperCaseLetters)){
+    } else if (!pw.value.match(upperCaseLetters)) {
         alert('please add 1 uppercase letter');
 
-    }else if(!pw.value.match(lowerCaseLetters)){
-        alert('please add 1 lovercase letter');
+    } else if (!pw.value.match(lowerCaseLetters)) {
+        alert('please add 1 lowercase letter');
 
-    }else{
+    } else {
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
         localStorage.setItem('email', email.value);
@@ -54,7 +54,7 @@ function store(){
 }
 
 //checking
-function check(){
+function check() {
     var storedName = localStorage.getItem('email');
     var storedPw = localStorage.getItem('pw');
 
@@ -62,15 +62,37 @@ function check(){
     var userPw = document.getElementById('password2');
     var userRemember = document.getElementById("rememberMe");
 
-    if(userName.value.length == 0){
+    if (userName.value.length == 0) {
         alert('Please fill in email');
 
-    }else if(userName.value == storedName && userPw.value == storedPw){
+    } else if (userName.value == storedName && userPw.value == storedPw) {
         alert('You are logged in.');
         location.replace("https://www.w3schools.com");
 
-    }else{
+    } else {
         alert('Error on login');
     }
 }
+
+
+//Prevent default
+var form = document.getElementById("form");
+
+function handleForm(event) {
+    event.preventDefault();
+}
+form.addEventListener('submit', handleForm);
+document.getElementById("form").reset();
+
+
+
+
+var form2 = document.getElementById("form2");
+
+function handleForm(event) {
+    event.preventDefault();
+}
+
+
+
 
