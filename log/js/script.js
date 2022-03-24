@@ -42,13 +42,14 @@ function store() {
         alert('please add 1 uppercase letter');
 
     } else if (!pw.value.match(lowerCaseLetters)) {
-        alert('please add 1 lovercase letter');
+        alert('please add 1 lowercase letter');
 
     } else {
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
         localStorage.setItem('email', email.value);
         alert('Your account has been created');
+        location.replace("https://www.w3schools.com");
     }
 }
 
@@ -66,6 +67,7 @@ function check() {
 
     } else if (userName.value == storedName && userPw.value == storedPw) {
         alert('You are logged in.');
+        location.replace("https://www.w3schools.com");
 
     } else {
         alert('Error on login');
