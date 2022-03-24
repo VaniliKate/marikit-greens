@@ -12,8 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link href="./css/home.css" rel="stylesheet">
-    <link href="./css/account.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
+    <link href="./profile.css" rel="stylesheet">
     <title>Profile</title>
 </head>
 
@@ -47,19 +47,19 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Log in</a>
+                            <a class="nav-link" href="/log/log.html">Log in</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="/log/log.html">Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about-us">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Admin</a>
+                            <a class="nav-link" href="/admin/admin.html">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Account</a>
+                            <a class="nav-link" href="./account2.html">Account</a>
                         </li>
                     </ul>
                     <div style="margin-right: 30px">
@@ -67,9 +67,8 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD:profile/account2.html
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main id="main-account">
       <div class="container">
             <h1><u>Profile</u></h1>
@@ -79,93 +78,61 @@
                 <img src="./ac-images/CDC_produce.png" id="img-ttle" alt="veggies">
                <div class="details">
                 <h2><u>Details</u></h2>
-                <br><br>
-                    <h6>Name</h6>
-                  <p><span class="fnametext"></span> <span class="lnametext"></span></p>
-                    <br><br>
-                  <h6>Age</h6>
-                       <p><span class="agetext"></span></p>
-                  <br><br>
+                          <br><br>
+                <div class="img">
+                  <button onclick="myProfile()"><img src="https://img.icons8.com/emoji/96/000000/waving-hand-emoji.png" onmouseenter="bigImg(this)" onmouseleave="smallImg(this)"/>
+                  </button>
+                </div> 
+                         <br><br>
+             <div class="info">
+                <h6>Hello there,</h6>
+                  <p> Am<span class="nametext"></span></p>
+                       <br><br>
+                       <button type="reset" id="edit">Edit Profile</button>
                      </div>
                   </div>
-            <div class="col-md-6">
+                  </div>
+             <div class="col-md-6">
                   <img src="./ac-images/fruit.jpg" alt="pic" id="next-pic" class="rounded">
                 <br><br>
               </div>
               </div>
+              <div class="footer">
+                  <div class="row">
+                      <div class="col-md-4">
+                        <div class="ttle">
+                            <h6>Marikit-Greens</h6>
+                        </div>
+                          </div>
+                       <br><br>
+                <div id="copyright">
+                     <p><span>&#169;</span>Copyright 2022</p>
+                </div>
+                <div id="icon">
+                    <img src="./ac-images/i1.png"  width="20" height="20">
+                    <img src="./ac-images/i2.jpeg" width="20" height="20">
+                    <img src="./ac-images/i3.jpeg"width="20" height="20">
+                       </div>
+                </div>
             </div>
               <br><br>
          </div>
-        </div>
-        <br><br>
-             </div>
-            </div>
-        </content>
-        <footer>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="box">
-                        <h6>Marikit-Greens</h6>
-                    </div>
-=======
-        </nav>
-    </header>
-
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="script.js" id="form" method="POST">
-                <h1>Sign Up</h1>
-                <input type="text" placeholder="Name" name="name" id="name" />
-                <input type="email" placeholder="Email" name="email" id="email" />
-                <input type="password" placeholder="Password" name="password" id="password" />
-                <button id="btn" type="reset" onclick="store()">Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form action="#" id="form2">
-                <h1>Sign in</h1>
-                <input type="email" placeholder="Email" name="email" id="email2" />
-                <input type="password" placeholder="Password" name="password" id="password2" />
-                <button id="btn2" type="submit" onclick="check()">Sign In</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>One of us?</h1>
-                    <p>Your support is highly appreciated! Thank you for choosing us again! Happy shopping!</p>
-                    <button class="ghost" id="signIn">Sign In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>New here?</h1>
-                    <p>Welcome to Marikiti Greens! A one stop shop for all your grocery needs. We offer doorstep
-                        delivery to your preferred location as well. Happy shopping!</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
->>>>>>> origin/development:log/log.html
-                </div>
-            <div id="icon" class="col-md-6">
-                <img src="./ac-images/i1.png"  width="20" height="20">
-                <img src="./ac-images/i2.jpeg" width="20" height="20">
-                <img src="./ac-images/i3.jpeg"width="20" height="20">
-            </div>
-<<<<<<< HEAD:profile/account2.html
-            </div>
-            <div class="copyright">
-            <p><span>&#169;</span>Copyright 2022</p>
-            </div>
-        </footer>
+         <script>
+              function bigImg(x) {
+        x.style.height = "74px";
+        x.style.width = "74px";
+      }
+      
+      function smallImg(x) {
+        x.style.height = "32px";
+        x.style.width = "32px";
+      }
+         </script>
       </main>
       <script src="https://code.jquery.com/jquery-3.6.0.js" 
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
        crossorigin="anonymous">
     </script>
-=======
-        </div>
-    </div>
-
-
-
->>>>>>> origin/development:log/log.html
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
         crossorigin="anonymous">
@@ -174,15 +141,7 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
         crossorigin="anonymous">
     </script>
-<<<<<<< HEAD:profile/account2.html
-    <script src="./js/account.js"></script>
+    <script src="./profile.js"></script>
 
-=======
-    <script src="./js/script.js"></script>
->>>>>>> origin/development:log/log.html
 </body>
-</body>
-
-
-</html>
 </html>
