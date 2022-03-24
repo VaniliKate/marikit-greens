@@ -83,14 +83,14 @@
                   <button onclick="myProfile()"><img src="https://img.icons8.com/emoji/96/000000/waving-hand-emoji.png" onmouseenter="bigImg(this)" onmouseleave="smallImg(this)"/>
                   </button>
                 </div> 
-                         <br><br>
+                    <br><br>
              <div class="info">
                 <h6>Hello there,</h6>
-                  <p> Am<span class="nametext"></span></p>
+                  <p><span class="nametext"></span></p>
                        <br><br>
-                       <h6>Email:</h6>
+                       <h6>We are glad to have you here!<br>happy shopping.</h6>
                        <p><span class="emailtext"></span></p>
-                       <button type="reset" id="edit">Edit Profile</button>
+                       <button type="reset" id="edit" onclick="removeItem()">Edit Profile</button>
                      </div>
                   </div>
                   </div>
@@ -130,6 +130,14 @@
       function smallImg(x) {
         x.style.height = "32px";
         x.style.width = "32px";
+      }
+      {
+          function myProfile(){
+              $('.info').css("display", "block");
+          }
+          function removeItem(){
+              $('.info').css("display","none")
+          }
       }
          </script>
       </main>
