@@ -3,15 +3,30 @@
   padding: 0;
 }
 
+
 body {
-  font-family: Poppins;
+  font-family: "Poppins" sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+.navbar-nav :visited a,
+.navbar-nav :hover a,
+.navbar-nav :active a,
+.navbar-nav:focus a,
+.navbar-nav :link a{
+  color: red !important;
 }
 
 .nav-link {
   color: white !important;
-  font-size: 20px;
+  font-family: "Poppins" sans-serif;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 800;
-}
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;}
 
 .navbar {
   background-color: rgba(67, 241, 23, 0.9);
@@ -88,6 +103,18 @@ body {
 .cart h3 {
   font-size: 50px !important;
   font-weight: bolder;
+}
+#cart{
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  background: transparent;
+  color: azure;
+  font-size: 20px;
+
+}
+#cart:hover{
+   background-color: chartreuse;
 }
 .cimage {
   height: 100vh;
