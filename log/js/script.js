@@ -72,13 +72,16 @@ function check() {
     }
 }
 
+
+//Prevent default
 var form = document.getElementById("form");
 
 function handleForm(event) {
     event.preventDefault();
 }
 form.addEventListener('submit', handleForm);
-form.target.reset();
+document.getElementById("form").reset();
+
 
 
 
@@ -87,4 +90,7 @@ var form2 = document.getElementById("form2");
 function handleForm(event) {
     event.preventDefault();
 }
+
+
+
 
