@@ -86,6 +86,7 @@ h3{
 }
 .info{
     text-align: center;
+    display: none;
 }
 .Details2{
     height: 400px;
