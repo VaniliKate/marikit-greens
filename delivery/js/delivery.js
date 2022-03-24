@@ -1,4 +1,10 @@
-$(document).ready(function(){
+$(document).ready(function () {
+  $(".go-home").click(function () {
+    console.log("hello")
+     window.location.replace(
+       window.location.pathname = "/ft-homepage/homepage.html"
+     ); 
+  })
 
   $("#deliver").submit(function(event){
     event.preventDefault();

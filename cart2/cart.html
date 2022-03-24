@@ -100,24 +100,27 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item hide-auth">
                 <a class="nav-link" href="../log/log.html">Log in</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item hide-auth">
                 <a class="nav-link" href="../log/log.html">Register</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-us">About us</a>
+                <a class="nav-link" href="../index.html#about-us">About us</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item admin-auth">
                 <a class="nav-link" href="../admin/admin.html">Admin</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Account</a>
+                <a class="nav-link" href="../Account/account.html">Account</a>
+              </li>
+              <li class="nav-item hide-logged" style="cursor: pointer">
+                <a class="nav-link log-out">Log Out</a>
               </li>
             </ul>
             <div style="margin-right: 30px">
-              <a href=""><i class="fas fa-shopping-cart"></i></a>
+              <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
@@ -162,7 +165,7 @@
               collection.
             </p>
             <button class="btn btn-success">
-              <a href="#about-us">more about us</a>
+              <a href="../index.html#about-us">more about us</a>
             </button>
           </div>
           <div class="cright">
@@ -212,14 +215,14 @@
           <div class="cboxtwo">
             <div class="ccovertwo" id="product">
               <h6>chicken</h6>
+
               <p>550</p>
               <p id="cmin">per kg</p>
-
               <button id="cart">+</button>
             </div>
           </div>
-          <div class="cboxthree" id="product">
-            <div class="ccoverthree">
+          <div class="cboxthree">
+            <div class="ccoverthree" id="product">
               <h6>pork</h6>
               <p>550</p>
               <p id="cmin">per kg</p>
@@ -400,6 +403,7 @@
             </thead>
             <tbody id="pizza"></tbody>
           </table>
+          <button type="button" class="btn btn-success check-out">Checkout</button>
         </div>
       </div>
     </div>
@@ -414,5 +418,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="cart.js"></script>
+    <script src="../auth.js"></script>
   </body>
 </html>

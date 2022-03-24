@@ -49,31 +49,34 @@ function store() {
         localStorage.setItem('pw', pw.value);
         localStorage.setItem('email', email.value);
         alert('Your account has been created');
-        location.replace("https://www.w3schools.com");
+        window.location.replace(
+          (window.location.pathname = "/ft-homepage/homepage.html")
+        );
     }
 }
 
 //checking
-function check() {
+function check(){
     var storedName = localStorage.getItem('email');
     var storedPw = localStorage.getItem('pw');
 
     var userName = document.getElementById('email2');
     var userPw = document.getElementById('password2');
-    var userRemember = document.getElementById("rememberMe");
 
     if (userName.value.length == 0) {
         alert('Please fill in email');
 
     } else if (userName.value == storedName && userPw.value == storedPw) {
         alert('You are logged in.');
-        location.replace("https://www.w3schools.com");
+        window.location.replace(
+          (window.location.pathname = "/ft-homepage/homepage.html")
+        ); 
+    }else{
 
-    } else {
         alert('Error on login');
+        return
     }
 }
-
 
 //Prevent default
 var form = document.getElementById("form");
@@ -84,15 +87,9 @@ function handleForm(event) {
 form.addEventListener('submit', handleForm);
 document.getElementById("form").reset();
 
-
-
-
 var form2 = document.getElementById("form2");
 
 function handleForm(event) {
     event.preventDefault();
 }
-
-
-
 
