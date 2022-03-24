@@ -20,50 +20,54 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light one">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">MARIKITI GREEN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Vegetables</a></li>
-                            <li><a class="dropdown-item" href="#">Fruits</a></li>
-                            <li><a class="dropdown-item" href="#">Crereals</a></li>
-                            <li><a class="dropdown-item" href="#">Meat</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Account</a>
-                    </li>
-                </ul>
-                <div style="margin-right: 30px">
-                    <i class="fas fa-shopping-cart"></i>
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light one">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MARIKITI GREENS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                                <li><a class="dropdown-item" href="#">Crereals</a></li>
+                                <li><a class="dropdown-item" href="#">Meat</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Account</a>
+                        </li>
+                    </ul>
+                    <div style="margin-right: 30px">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
                 </div>
             </div>
+<<<<<<< HEAD:profile/account2.html
         </div>
     </nav>
     <main id="main-account">
@@ -103,12 +107,48 @@
                     <div class="box">
                         <h6>Marikit-Greens</h6>
                     </div>
+=======
+        </nav>
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="script.js" id="form" method="POST">
+                <h1>Sign Up</h1>
+                <input type="text" placeholder="Name" name="name" id="name" />
+                <input type="email" placeholder="Email" name="email" id="email" />
+                <input type="password" placeholder="Password" name="password" id="password" />
+                <button id="btn" type="reset" onclick="store()">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#" id="form2">
+                <h1>Sign in</h1>
+                <input type="email" placeholder="Email" name="email" id="email2" />
+                <input type="password" placeholder="Password" name="password" id="password2" />
+                <button id="btn2" type="submit" onclick="check()">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>One of us?</h1>
+                    <p>Your support is highly appreciated! Thank you for choosing us again! Happy shopping!</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>New here?</h1>
+                    <p>Welcome to Marikiti Greens! A one stop shop for all your grocery needs. We offer doorstep
+                        delivery to your preferred location as well. Happy shopping!</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+>>>>>>> origin/development:log/log.html
                 </div>
             <div id="icon" class="col-md-6">
                 <img src="./ac-images/i1.png"  width="20" height="20">
                 <img src="./ac-images/i2.jpeg" width="20" height="20">
                 <img src="./ac-images/i3.jpeg"width="20" height="20">
             </div>
+<<<<<<< HEAD:profile/account2.html
             </div>
             <div class="copyright">
             <p><span>&#169;</span>Copyright 2022</p>
@@ -119,6 +159,13 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
        crossorigin="anonymous">
     </script>
+=======
+        </div>
+    </div>
+
+
+
+>>>>>>> origin/development:log/log.html
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
         crossorigin="anonymous">
@@ -127,8 +174,12 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
         crossorigin="anonymous">
     </script>
+<<<<<<< HEAD:profile/account2.html
     <script src="./js/account.js"></script>
 
+=======
+    <script src="./js/script.js"></script>
+>>>>>>> origin/development:log/log.html
 </body>
 </body>
 
