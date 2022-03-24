@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
 .nav-link {
   color: white !important;
   font-family: "Poppins" sans-serif;
@@ -21,17 +26,17 @@
 }
 
 .options {
-  background-image: url("https://images.pexels.com/photos/3737696/pexels-photo-3737696.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  margin-top: 20%;
-  background-size: cover;
-  width: 100vw;
+  background-image: url("https://static01.nyt.com/images/2018/03/07/dining/00IMPORTS/00IMPORTS-articleLarge.gif?quality=75&auto=webp&disable=upscale");
   height: 100vh;
 }
-.options {
+#deliveryoptions {
+  
+  padding: 20%;
   text-align: center;
-  color: black;
+  color: white;
   font-size: x-large;
   font-weight: bolder;
+  
 }
 .flex-parent {
   display: flex;
@@ -85,13 +90,20 @@
     font-weight: bolder;
   }
   .delivery-feedback {
-    color: black;
+    color: white;
     font-weight: bolder;
     text-align: center;
-    margin-top: 180px;
     font-size: x-large;
-    background-color: #ABEB45;
-
+    position: absolute;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  .delivery-feedback{
+    position: relative;
+    background-image: url("https://static01.nyt.com/images/2018/03/07/dining/00IMPORTS/00IMPORTS-articleLarge.gif?quality=75&auto=webp&disable=upscale");
+    display: none;
   }
   .pickup-feedback {
     display: none;
@@ -99,4 +111,5 @@
     color: black;
     font-weight: bolder;
     background-color: #ABEB45;
+
   }
