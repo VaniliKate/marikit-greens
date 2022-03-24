@@ -53,6 +53,7 @@ function store(){
 }
 
 //checking
+
 function check(){
     var storedName = localStorage.getItem('email');
     var storedPw = localStorage.getItem('pw');
@@ -62,8 +63,17 @@ function check(){
 
     if(userName.value == storedName && userPw.value == storedPw){
         alert('You are logged in.');
+        window.location.replace(
+          (window.location.pathname = "/ft-homepage/homepage.html")
+        ); 
     }else{
         alert('Error on login');
+        return
     }
 }
+
+$("#sign-in").click(function (e) {
+    e.preventDefault();
+    check()
+});
 
