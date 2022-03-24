@@ -54,12 +54,7 @@ function store() {
 }
 
 //checking
-<<<<<<< HEAD
-
 function check(){
-=======
-function check() {
->>>>>>> e3864a7f333ea048b9f43f0052521855f181cadf
     var storedName = localStorage.getItem('email');
     var storedPw = localStorage.getItem('pw');
 
@@ -89,9 +84,6 @@ function handleForm(event) {
 }
 form.addEventListener('submit', handleForm);
 document.getElementById("form").reset();
-
-
-
 
 var form2 = document.getElementById("form2");
 
