@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  if (localStorage.getItem("name")) {
+    $("#login").hide()
+  }
   //get categories
   function getCategories() {
     if (localStorage.getItem("categories")) {
@@ -129,6 +132,7 @@ $(document).ready(function () {
         <th scope="row">${element.id}</th>
         <td><img src='./images/${element.image}' width='50px' style="border-radius:10px;" /></td>
         <td>${element.name}</td>
+        <td>${element.category}</td>
         <td>Ksh. ${element.price}</td>
     </tr>`
       );
