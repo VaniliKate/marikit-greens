@@ -91,7 +91,7 @@
 }
 .card-delivery{
   position: relative;
-  background-image: url("https://static01.nyt.com/images/2018/03/07/dining/00IMPORTS/00IMPORTS-articleLarge.gif?quality=75&auto=webp&disable=upscale");
+  background-image: url("../images/delivery-gif.gif");
   height: 100vh;
   display: none;
 }
@@ -105,15 +105,13 @@
   }
 #pickup-button, #pickup-btn {
   justify-content: center;
-  margin-top: 35%;
-  margin-left: 2%;
   
 }
 .pickup-feedback {
   position: relative;
   text-align: center;
   display: none;
-  background-image: url("https://static01.nyt.com/images/2018/03/07/dining/00IMPORTS/00IMPORTS-articleLarge.gif?quality=75&auto=webp&disable=upscale");
+  background-image: url("../images/delivery-gif.gif");
   height: 100vh;
   justify-content: center;
 }
