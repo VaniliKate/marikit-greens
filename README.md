@@ -36,6 +36,8 @@
 + [Licence](#licence)
 
 ## Setup Requirements
+### Categories and Products
+* You need to sign up as an Admin first and add the categories and products.
 ### Local machine setup
 * Clone this repository to your file system.
 
