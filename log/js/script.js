@@ -50,7 +50,7 @@ function store() {
         localStorage.setItem('email', email.value);
         alert('Your account has been created');
         window.location.replace(
-          (window.location.pathname = "/ft-homepage/homepage.html")
+          (window.location.pathname = "/log/log.html")
         );
     }
 }
