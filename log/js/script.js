@@ -49,6 +49,9 @@ function store() {
         localStorage.setItem('pw', pw.value);
         localStorage.setItem('email', email.value);
         alert('Your account has been created');
+        window.location.replace(
+          (window.location.pathname = "/ft-homepage/homepage.html")
+        );
     }
 }
 
@@ -65,7 +68,7 @@ function check(){
 
     } else if (userName.value == storedName && userPw.value == storedPw) {
         alert('You are logged in.');
-        location.replace(
+        window.location.replace(
           (window.location.pathname = "/ft-homepage/homepage.html")
         ); 
     }else{
