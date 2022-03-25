@@ -20,13 +20,6 @@
   ## Description
  This is an e-commerce website that allows users to navigate through a listed  items of fresh produce.
 
- ## Installation
- 
- ### Requirements
- 
- * Either a computer,phone,tablet or an Ipad
- 
- * An access to the Internet
 ## Table of Contents
 
 + [Description](#description)
